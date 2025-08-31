@@ -1,0 +1,125 @@
+- ID: SDM001
+  名前: ユーザー種類
+  属性:
+    ID: string
+    名前: string
+- ID: SDM002
+  名前: ユーザー環境
+  属性:
+    ID: string
+    名前: string
+- ID: SDM003
+  名前: ユーザー利用状況
+  属性:
+    ID: string
+    名前: string
+- ID: SDM004
+  名前: ユーザー利用端末
+  属性:
+    ID: string
+    名前: string
+- ID: SDM005
+  名前: ユーザー
+  属性:
+    ID: string
+    名前: string
+    目的: string
+    ユーザー種類ID: string
+    ユーザー環境IDs: array<int, string>
+    ユーザー利用状況IDs: array<int, string>
+    利用頻度: string
+    ユーザー利用端末IDs: array<int, string>
+    利用時のライフサイクル: string
+- ID: SDM006
+  名前: ユーザー問題
+  属性:
+    ID: string
+    ユーザーID: string
+    名称: string
+    問題: string
+    原因ID: string?
+- ID: SDM008
+  名前: ドメインID
+  属性:
+    ID: string
+    名前: string
+- ID: SDM009
+  名前: ユーザー要求
+  属性:
+    ID: string
+    ユーザーID: string
+    問題IDs: array<int, string>
+    理想の形: string
+    ドメインID: string
+- ID: SDM010
+  名前: 実現難易度
+  属性:
+    ID: string
+    名前: string
+- ID: SDM011
+  名前: ユーザーストーリー
+  属性:
+    ID: string
+    ユーザー要求IDs: array<int, string>
+    タイトル: string
+    正常フロー: array<int, string>
+    代替フロー: array<int, string>
+    作業規則: array<int, string>
+    ユーザーID: string
+    ユーザー環境IDs: array<int, string>
+    ユーザー利用端末IDs: array<int, string>
+    ユーザー利用状況IDs: array<int, string>
+    頻度: string
+    ドメインID: string
+    発生コスト: string
+    実現難易度ID: string
+    懸念点: array<int, string>
+    対応バージョン: string
+- ID: SDM012
+  名前: 優先順位
+  属性:
+    ID: string
+    名前: string
+- ID: SDM013
+  名前: ビジネスルール
+  属性:
+    ID: string
+    名前: string
+    説明: string
+- ID: SDM014
+  名前: ユースケース
+  属性:
+    ID: string
+    ユーザーストーリーID: string
+    ユーザーIDs: array<int, string>
+    タイトル: string
+    説明: string
+    トリガー: string
+    事前条件: array<int, string>
+    事後条件: array<int, string>
+    通常フロー: array<int, string>
+    代替フロー: array<string, array<int, string>>
+    例外: array<string, array<int, string>>
+    優先順位ID: string
+    使用頻度: string
+    ビジネスルールIDs: array<int, string>
+    その他情報: string
+    前提条件: array<int, string>
+    項目詳細:
+      表示項目: string
+      入力項目: string
+      発生イベント: string
+    関連概念データIDs: array<int, string>
+    品質特性IDs: array<sint, string>
+- ID: SDM015
+  名前: 概念データ
+  属性:
+    ID: string
+    名前: string
+    名前En: string
+- ID: SDM016
+  名前: 品質特性
+  属性:
+    ID: string
+    名前: string
+    説明: string
