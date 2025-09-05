@@ -38,11 +38,6 @@
     名称: string
     問題: string
     原因ID: string?
-- ID: SDM007
-  名前: ドメイン分類
-  属性:
-    ID: string
-    名前: string
 - ID: SDM008
   名前: ドメインID
   属性:
@@ -55,7 +50,7 @@
     ユーザーID: string
     問題IDs: array<int, string>
     理想の形: string
-    ドメイン分類ID: string
+    ドメインID: string
 - ID: SDM010
   名前: 実現難易度
   属性:
@@ -75,7 +70,6 @@
     ユーザー利用端末IDs: array<int, string>
     ユーザー利用状況IDs: array<int, string>
     頻度: string
-    ドメイン分類ID: string
     ドメインID: string
     発生コスト: string
     実現難易度ID: string
@@ -122,6 +116,7 @@
   属性:
     ID: string
     名前: string
+    名前En: string
 - ID: SDM016
   名前: 品質特性
   属性:
