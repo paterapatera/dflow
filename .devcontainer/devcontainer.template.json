@@ -1,0 +1,40 @@
+// https://aka.ms/devcontainer.json
+{
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "app",
+	"workspaceFolder": "/var/www/html",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"asciidoctor.asciidoctor-vscode",
+				"shd101wyy.markdown-preview-enhanced",
+				"bmewburn.vscode-intelephense-client",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"mhutchie.git-graph",
+				"eamodio.gitlens"
+			],
+			"settings": {}
+		}
+	},
+	"remoteUser": "sail",
+	"postCreateCommand": "chown -R 1000:1000 /var/www/html 2>/dev/null || true",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"installOhMyZshConfig": true,
+			"upgradePackages": true,
+			"username": "automatic",
+			"userUid": "automatic",
+			"userGid": "automatic"
+		}
+	}
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "shutdownAction": "none",
+}
