@@ -1,40 +1,40 @@
 - ID: SDM001
-  名前: ユーザー種類
+  名前: アクター種類
   属性:
     ID: string
     名前: string
 - ID: SDM002
-  名前: ユーザー環境
+  名前: アクター環境
   属性:
     ID: string
     名前: string
 - ID: SDM003
-  名前: ユーザー利用状況
+  名前: アクター利用状況
   属性:
     ID: string
     名前: string
 - ID: SDM004
-  名前: ユーザー利用端末
+  名前: アクター利用端末
   属性:
     ID: string
     名前: string
 - ID: SDM005
-  名前: ユーザー
+  名前: アクター
   属性:
     ID: string
     名前: string
     目的: string
-    ユーザー種類ID: string
-    ユーザー環境IDs: array<int, string>
-    ユーザー利用状況IDs: array<int, string>
+    アクター種類ID: string
+    アクター環境IDs: array<int, string>
+    アクター利用状況IDs: array<int, string>
     利用頻度: string
-    ユーザー利用端末IDs: array<int, string>
+    アクター利用端末IDs: array<int, string>
     利用時のライフサイクル: string
 - ID: SDM006
-  名前: ユーザー問題
+  名前: アクター問題
   属性:
     ID: string
-    ユーザーID: string
+    アクターID: string
     名称: string
     問題: string
     原因ID: string?
@@ -44,10 +44,10 @@
     ID: string
     名前: string
 - ID: SDM009
-  名前: ユーザー要求
+  名前: アクター要求
   属性:
     ID: string
-    ユーザーID: string
+    アクターID: string
     問題IDs: array<int, string>
     理想の形: string
     ドメインID: string
@@ -57,18 +57,18 @@
     ID: string
     名前: string
 - ID: SDM011
-  名前: ユーザーストーリー
+  名前: アクターストーリー
   属性:
     ID: string
-    ユーザー要求IDs: array<int, string>
+    アクター要求IDs: array<int, string>
     タイトル: string
     正常フロー: array<int, string>
     代替フロー: array<int, string>
     作業規則: array<int, string>
-    ユーザーID: string
-    ユーザー環境IDs: array<int, string>
-    ユーザー利用端末IDs: array<int, string>
-    ユーザー利用状況IDs: array<int, string>
+    アクターID: string
+    アクター環境IDs: array<int, string>
+    アクター利用端末IDs: array<int, string>
+    アクター利用状況IDs: array<int, string>
     頻度: string
     ドメインID: string
     発生コスト: string
@@ -90,8 +90,8 @@
   名前: ユースケース
   属性:
     ID: string
-    ユーザーストーリーID: string
-    ユーザーIDs: array<int, string>
+    アクターストーリーID: string
+    アクターIDs: array<int, string>
     タイトル: string
     説明: string
     トリガー: string
