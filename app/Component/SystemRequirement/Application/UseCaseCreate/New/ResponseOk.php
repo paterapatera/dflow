@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Component\SystemRequirement\Feature\UsecaseCreate\New;
+namespace App\Component\SystemRequirement\Application\UseCaseCreate\New;
 
 use App\Component\SystemRequirement\Domain;
 use Illuminate\Support\Collection;

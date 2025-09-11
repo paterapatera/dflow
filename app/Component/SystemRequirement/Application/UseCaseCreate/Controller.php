@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Component\SystemRequirement\Feature\UsecaseCreate;
+namespace App\Component\SystemRequirement\Application\UseCaseCreate;
 
 use App\Component\SystemRequirement\Domain;
 use App\Http\Controllers\Controller as BaseController;
@@ -32,7 +32,7 @@ class Controller extends BaseController
         $conceptualData = $conceptualDataRepository->getAll();
         $qualityAttributes = $qualityAttributeRepository->getAll();
 
-        return Inertia::render('system-requirement/usecase/new', New\ResponseOk::from(
+        return Inertia::render('system-requirement/use-case/new', New\ResponseOk::from(
             $actors,
             $userStories,
             $priorities,
